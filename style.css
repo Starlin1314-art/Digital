@@ -1,66 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
 .logo {
-    width: 127px;
-    height: 127px;
+  width: auto;
+  height: 127px;
+  display: block;
 }
 
-body{
-    background-color: #ffffff;
-    font-family: "LXGW Marker Gothic", sans-serif;
-   font-weight: 400;
-   font-style: normal;
-   text-decoration: none;
-   width: 100%;
-   height: 100%;
-   margin: 0 auto;
-
+body {
+  background-color: #ffffff;
+  font-family: "LXGW Marker Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
 }
 
-.links{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+.whole-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.links li{
-    display: inline-block;
+.links {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.links li {
+  display: inline-block;
 }
 
 .links a {
-    text-decoration: none;
-    color: inherit;
-    font-family: "LXGW Marker Gothic", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: x-large;
-    margin: 0px 25px;
-    text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-family: "LXGW Marker Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+  margin: 0px 25px;
+  text-align: center;
 }
-.navbar{
-   display: flex;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
-    background-color: aliceblue;
-    text-align: center;
-    
-
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: aliceblue;
+  text-align: center;
+  width: 100%;
 }
 
 .links ul {
-    text-align: center;
-    
-
+  text-align: center;
 }
 
 .search {
-    width: 300px;
-    height: 40px;
-    
+  width: 300px;
+  height: 40px;
 }
 .container {
-
-
   text-align: center;
   color: rgb(0, 0, 0);
   height: 100%;
@@ -68,15 +73,15 @@ body{
 }
 
 .homepage {
-    width: 100%;
-    height: 100%; 
+  width: 100%;
+  height: 800px;
 }
 
-.beijing{
+.beijing {
   width: 100%;
-  height: 50%;    
+  height: 100%;
 }
-.xian{
+.xian {
   width: 100%;
   height: 100%;
 }
@@ -85,42 +90,39 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
- color: rgb(255, 255, 255);
- text-align: center;
- font-size: x-large;
-
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: x-large;
 }
 
-
-.highlight{
-    background-color: aliceblue;
-    color: rgb(0, 0, 0);
-    font-weight: 200;
+.highlight {
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+  font-weight: 200;
 }
-.sloganB{
-position: absolute;
-top: 60%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
+.sloganB {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-
-.xiancard{
+.xiancard {
   width: 441px;
   height: 586px;
 }
 
-.card button{
-   font-size: 24px;
-    font-weight: bold;
-    text-transform: capitalize;
-    background-color: aliceblue;
-    color: rgb(0, 0, 0);
-    padding: 10px 30px;
-    text-decoration: none;
+.card button {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: aliceblue;
+  color: rgb(0, 0, 0);
+  padding: 10px 30px;
+  text-decoration: none;
 }
-.card a{
+.card a {
   text-decoration: none;
   color: black;
   font-family: "LXGW Marker Gothic", sans-serif;
@@ -128,67 +130,64 @@ text-align: center;
   font-style: normal;
 }
 
-
-.card{
+.card {
   display: grid;
   width: 100%;
   height: 100%;
   grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
   grid-template-rows: 2fr 3fr;
+  margin: 0 auto;
+}
+
+.beijingimg {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+}
+
+.imgtext {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  height: 100%;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.xianimg {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+  height: 100%;
+  padding: 80px;
+}
+
+.imgtext2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
   gap: 15px;
   margin: 0 auto;
-  
-
-}
-
-.beijingimg{
-  grid-column-start:2 ;
-  grid-column-end:3 ;
-  grid-row-start:1 ;
-  grid-row-end:2 ;
   height: 100%;
   width: 100%;
+  padding-left: 30px;
 }
-
-.imgtext{
-  grid-column-start:4 ;
-  grid-column-end:5 ;
-  grid-row-start:1 ;
-  grid-row-end:2 ;
-  height: 100%;
-  width: 100%;
-
-}
-
-.xianimg{
-  grid-column-start:4 ;
-  grid-column-end:5 ;
-  grid-row-start:2 ;
-  grid-row-end:3 ;
-  width: 100%;
-  height: 100%;
-
-}
-
-.imgtext2{
-  grid-column-start:2 ;
-  grid-column-end:3 ;
-  grid-row-start:2 ;
-  grid-row-end:3 ;
-  gap: 15px; 
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-}
-.content{
+.content {
   height: 100%;
   width: 100%;
   display: grid;
-  gap: 10rem;
- 
+  box-sizing: border-box;
 }
 
-.trailpathimg{
+.trailpathimg {
   height: 100%;
   width: 100%;
   margin: 0 auto;
@@ -198,7 +197,7 @@ text-align: center;
   background-size: cover;
 }
 
-.pathway{
+.pathway {
   display: grid;
   width: 100%;
   height: 100%;
@@ -208,112 +207,105 @@ text-align: center;
   margin: 0 auto;
 }
 
-.footer-container{
+.footer-container {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   background-color: aliceblue;
   padding: 20px;
-
 }
 
-.footerlogo{
+.footerlogo {
   width: 80px;
   height: 80px;
 }
-.pathcards{
- display: flex;
- justify-content: center;
- align-items: center;
- margin: 20px auto;
- grid-column-start:1 ;
- grid-column-end:6 ;
- grid-row-start:1 ;
- grid-row-end:3 ;
- margin-top: 0;
-
+.pathcards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  margin-top: 0;
 }
-.panda{
+.panda {
   width: 100px;
   height: 100px;
   position: absolute;
   top: 140%;
   left: 90%;
 }
-section{
-    height:100%;
-    min-height: 100px;
+section {
+  height: 100%;
+  min-height: 100px;
 }
 
-.content{
+.content {
   margin-bottom: 0;
 }
 
-
- .ptext{
+.ptext {
   text-align: center;
   align-items: center;
 }
-.h3text{
+.h3text {
   text-align: center;
   align-items: center;
   margin: 20px auto;
-   font-size: x-large;
+  font-size: x-large;
   font-weight: 700;
 }
-.facebook{
+.facebook {
   width: 30px;
   height: 30px;
- 
 }
-.X{
+.X {
   width: 30px;
   height: 30px;
-
 }
-.Instagram{
+.Instagram {
   width: 30px;
   height: 30px;
 }
 
-.forbiddenimg{
+.forbiddenimg {
   height: 100%;
   width: 100%;
   margin: 0 auto;
   align-items: start;
   grid-column-start: 1;
-  grid-column-end: 2; 
+  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
 }
-.beijingtext1{
- text-align: end;
+.beijingtext1 {
+  text-align: end;
   font-size: xx-large;
   font-weight: 700;
   grid-column-start: 5;
   grid-column-end: 6;
-  grid-row-start: 1;  
+  grid-row-start: 1;
   grid-row-end: 2;
-  margin-right:30px;
+  margin-right: 30px;
   width: 100%;
   height: 100%;
-
 }
 
-.greatwallimg{
+.greatwallimg {
   height: 100%;
   width: 100%;
   margin: 0 auto;
   align-items: end;
   grid-column-start: 5;
-  grid-column-end: 6; 
+  grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-
-.forbidden{
+.forbidden {
   display: grid;
   grid-template-columns: 4fr 1fr 3fr 3fr 1fr;
   grid-template-rows: 2fr;
@@ -321,7 +313,7 @@ section{
   height: 100%;
 }
 
-.forbiddentext{
+.forbiddentext {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 1;
@@ -334,11 +326,11 @@ section{
   width: 100%;
   height: 100%;
 }
-.forbiddenthings{
+.forbiddenthings {
   height: 100%;
   width: 100%;
 }
-.greatwall{
+.greatwall {
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr 4fr 0.5fr;
   grid-template-rows: 2fr;
@@ -346,7 +338,7 @@ section{
   height: 100%;
 }
 
-.greatwalltext{
+.greatwalltext {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
@@ -360,34 +352,33 @@ section{
   height: 100%;
 }
 
-.beijingtext2{
- text-align: start;
+.beijingtext2 {
+  text-align: start;
   font-size: xx-large;
   font-weight: 700;
   grid-column-start: 1;
   grid-column-end: 3;
-  grid-row-start: 1;  
+  grid-row-start: 1;
   grid-row-end: 2;
-  margin-left:30px;
+  margin-left: 30px;
   width: 100%;
   height: 100%;
-
 }
 
-.beijingtext3{
-text-align: end;
+.beijingtext3 {
+  text-align: end;
   font-size: xx-large;
   font-weight: 700;
   grid-column-start: 5;
   grid-column-end: 6;
-  grid-row-start: 1;  
+  grid-row-start: 1;
   grid-row-end: 2;
-  margin-right:30px;
+  margin-right: 30px;
   width: 100%;
   height: 100%;
 }
 
-.templeofheaventext{
+.templeofheaventext {
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 1;
@@ -399,9 +390,8 @@ text-align: end;
   margin-top: 10px;
   width: 100%;
   height: 100%;
-
 }
-.templeofheaven{
+.templeofheaven {
   display: grid;
   grid-template-columns: 4fr 1fr 3fr 3fr 1fr;
   grid-template-rows: 2fr;
@@ -409,93 +399,97 @@ text-align: end;
   height: 100%;
 }
 
-.templeofheavenimg{
+.templeofheavenimg {
   height: 100%;
   width: 100%;
   margin: 0 auto;
   align-items: start;
   grid-column-start: 1;
-  grid-column-end: 2; 
+  grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-
 }
-.XiAn1{
+.XiAn1 {
   text-align: center;
   font-size: xx-large;
   font-weight: 700;
   grid-column-start: 5;
   grid-column-end: 6;
-  grid-row-start: 1;  
+  grid-row-start: 1;
   grid-row-end: 2;
-  margin-right:30px;
+  margin-right: 30px;
   width: 100%;
   height: 100%;
-
 }
-.belltower{
- display: grid;
+.belltower {
+  display: grid;
   grid-template-columns: 0.5fr 1fr 3fr 1fr 0.5fr;
   grid-template-rows: 2fr 1fr;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   gap: 1rem;
 }
 
-.belltowerimg{
-   max-width: 100%;
+.belltowerimg {
+  max-width: 100%;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 8px;
   align-items: start;
   grid-column-start: 1;
-  grid-column-end: 3; 
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
- 
-  
 }
 
-.belltowerimg2{
-   max-width: 100%;
+.belltowerimg2 {
+  max-width: 100%;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 8px;
   align-items: end;
   grid-column-start: 4;
-  grid-column-end: 6; 
+  grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.belltowertext{
- width: 100%;
+.belltowertext {
+  width: 100%;
   max-width: 800px;
   margin: auto;
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 1;  
+  grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.thingsallowed4{
+.thingsallowed4 {
   max-width: 100%;
-  height: auto; 
+  height: auto;
   align-content: center;
   justify-content: center;
   text-align: center;
   grid-column-start: 2;
-  grid-column-end: 5; 
+  grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
 }
-.forbiddenthings1{
+.forbiddenthings1 {
   max-width: 100%;
   height: auto;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 8px;
   align-items: center;
   margin: auto;
-  
 }
+
+.beijingcard {
+  width: auto;
+  height: auto;
+  max-width: 600px; /* or whatever size you want */
+  max-height: 600px;
+  object-fit: contain;
+}
+
 /*wooooo*/
